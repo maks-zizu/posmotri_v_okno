@@ -119,7 +119,7 @@ ol {
 
 .search-form__textfield {
   appearance: none;
-  cursor: url(../cursor.svg), text;
+  cursor: pointer;
   width: 225px;
   height: 27px;
   background: transparent;
@@ -132,6 +132,10 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.search-form__textfield:hover { 
+  cursor: url(../images/cursor.svg), text;
 }
 
 .search-form__textfield:focus {
@@ -228,7 +232,7 @@ ol {
   outline-offset: 0;
 }
 
-.content__card-link:focus {
+.content__card-link:active {
   background: #545050;
 }
 
